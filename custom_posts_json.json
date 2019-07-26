@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "name": "Banners Home",
+      "singular_name": "Banner",
+      "dashicon": "dashicons-format-gallery",
+      "post_type": "banners",
+      "supports": "title,editor,thumbnail",
+      "thumbnail_dimensions": "Banner Desktop [1920 x 763px]",
+      "related_post": "",
+      "has_category": 0,
+      "has_tag": 0
+    },
+    {
+      "name": "Produtos",
+      "singular_name": "Produto",
+      "dashicon": "dashicons-cart",
+      "post_type": "produtos",
+      "supports": "title,editor,thumbnail",
+      "thumbnail_dimensions": "Imagem do Produto [300 x 300px]",
+      "related_post": "",
+      "has_category": 1,
+      "has_tag": 0
+    }
+  ]
+}

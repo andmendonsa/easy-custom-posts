@@ -1,0 +1,5 @@
+Uptades Próxima Versão:
+- Importação de custom posts "base";
+- Validar os campos do formulário;
+- Alterar post_type na tabela wp_posts, caso seja alterado o post type de algum custom post;
+- Inserir botão para Importar custom posts de um arquivo .json;

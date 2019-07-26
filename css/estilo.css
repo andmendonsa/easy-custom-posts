@@ -1,0 +1,199 @@
+.container {
+  float: left;
+  position: relative;
+  width: 100%; }
+  .container h1 {
+    color: #bbd330;
+    font-size: 25px; }
+  .container .btn-voltar {
+    background: #313131;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid #313131;
+    text-decoration: none;
+    position: absolute;
+    padding: 6px 30px;
+    right: 5%;
+    top: 8px; }
+    .container .btn-voltar:focus {
+      box-shadow: 0 0 0 1px #313131, 0 0 2px 1px rgba(49, 49, 49, 0.8); }
+  .container .row h2 {
+    font-size: 22px;
+    color: #bbd330;
+    font-weight: 600; }
+  .container .row .view-top {
+    float: left;
+    width: 100%;
+    position: relative; }
+    .container .row .view-top h1 {
+      color: #212331;
+      font-size: 25px;
+      margin-bottom: 35px; }
+    .container .row .view-top a {
+      background: #bbd330;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 3px;
+      text-decoration: none;
+      position: absolute;
+      padding: 10px 15px;
+      left: 20%;
+      top: 8px; }
+      .container .row .view-top a:focus {
+        box-shadow: 0 0 0 1px #bbd330, 0 0 2px 1px rgba(187, 211, 48, 0.8); }
+      .container .row .view-top a.import {
+        right: 15px;
+        left: inherit; }
+  .container .row form .form-group {
+    width: 50%;
+    float: left;
+    margin-bottom: 25px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .container .row form .form-group label {
+      width: 100%;
+      display: block;
+      color: #212331;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 5px; }
+      .container .row form .form-group label.half-size {
+        width: 50%; }
+    .container .row form .form-group input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      color: #212331;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #bbd330; }
+    .container .row form .form-group input[type="checkbox"] {
+      border: 1px solid #bbd330;
+      width: 21px;
+      height: 21px; }
+      .container .row form .form-group input[type="checkbox"]:checked:before {
+        content: "\f147";
+        margin: -3px 0 0 -4px;
+        color: #bbd330;
+        font: normal 25px/1 dashicons; }
+    .container .row form .form-group select {
+      width: 90%;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid #bbd330; }
+    .container .row form .form-group.btn-submit {
+      width: 100%;
+      margin-top: 20px; }
+    .container .row form .form-group .checkbox-inline {
+      color: #212331;
+      font-size: 14px; }
+      .container .row form .form-group .checkbox-inline label {
+        display: inline;
+        margin-right: 10px; }
+  .container .row form #thumbnail_dimensions, .container .row form #related_post {
+    display: none; }
+  .container .row form .submit-post {
+    background-color: #bbd330;
+    border-color: #bbd330;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px 15px; }
+  .container .row .responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px; }
+  .container .row .responsive-table .table-header {
+    background-color: #bbd330;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em; }
+    .container .row .responsive-table .table-header div {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 15px; }
+  .container .row .responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
+    .container .row .responsive-table .table-row div {
+      font-size: 14px;
+      color: #212331;
+      flex-basis: 100%;
+      text-align: center; }
+    .container .row .responsive-table .table-row i {
+      font-size: 18px;
+      color: #212331; }
+  .container .row .responsive-table .col {
+    flex-basis: 20%; }
+  .container .row .responsive-table .empty {
+    display: flex;
+    justify-content: center;
+    color: #212331;
+    font-weight: bold; }
+  @media all and (max-width: 767px) {
+    .container .row .responsive-table .table-header {
+      display: none; }
+    .container .row .responsive-table li {
+      display: block; }
+    .container .row .responsive-table .col {
+      flex-basis: 100%; }
+    .container .row .responsive-table .col {
+      display: flex;
+      padding: 10px 0; }
+      .container .row .responsive-table .col:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right; } }
+
+.tooltip {
+  position: relative;
+  display: inline-block; }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 230px;
+    background-color: #555;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0 !important;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -47px;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-decoration: none; }
+    .tooltip .tooltiptext strong {
+      color: #ffffff; }
+    .tooltip .tooltiptext:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent; }
+    .tooltip .tooltiptext a {
+      color: #ffffff;
+      font-weight: 400;
+      text-decoration: none; }
+      .tooltip .tooltiptext a:hover {
+        font-weight: 600; }
+      .tooltip .tooltiptext a:last-child {
+        color: red; }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1; }
+
+/*# sourceMappingURL=estilo.css.map */
